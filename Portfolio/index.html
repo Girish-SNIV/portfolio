@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtech Responsive portfolio project </title>
+    <!-- UNICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Swiper css -->
+</head>
+<body>
+    <!-- Girish  -->
+    <!-- 500109971 -->
+    <!-- Batch3 AIML H -->
+<!-- sir i took help from these sites to make this portfolio  -->
+<!-- refrence  -->
+<!-- https://www.kunkalabs.com/mixitup/docs/get-started/
+https://iconscout.com/unicons/free-line-icon/instagram
+https://coolors.co/a5d0a8-8cada7-110b11-b7990d-f2f4cb
+https://drive.google.com/file/d/1JHUjltDsSqUqApneKV3_vyF63vLN5G0j/view
+-->
+
+
+
+    <!-- SIDE BAR -->
+    <aside class="sidebar" id="sidebar">
+        
+        <nav class="nav">
+
+            <div class="nav_menu">
+                <div class="menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">HOME</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">ABOUT</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">SKILLS</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#work" class="nav_link">WORK</a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+        <div id="overlay" class="overlay"></div>
+
+        <div id="welcomePopup" class="welcome-popup" ng-app="myApp" ng-controller="PopupController">
+            <div class="welcome-popup-content">
+                <h2>Welcome!</h2>
+                <p>Please enter your name:</p>
+                <input type="text" ng-model="userName" placeholder="Enter your name">
+                <p>Hello, <span>{{ userName }}</span> Welcome i hope you will contact me after see my profile and work</p>
+                <button id="closeWelcomePopup" class="close-btn" ng-click="closeWelcomePopup()">Close</button>
+            </div>
+        </div>
+        
+        
+        
+        
+        <section class="home" id="home">
+            <div class="home_container container grid">
+                
+                <img src="assets/img/girish.jpg" alt="" class="home_img">
+
+                <div class="home_data">
+                    <h1 class="home_title">Hi, I'am Girish</h1>
+                    <h3 class="home_subtitle">Doing Research in Speech</h3>
+                    <p class="home_discription">Have done many Projects in Audio, Text, Images and Videos Currently working with IIIT Professor and have mentor from ULSTER University.</p>
+                    <a href="#about" class="button">
+                        <i class="uil uil-user button_icon"></i>
+                        MORE ABOUT ME!
+                    </a>
+                </div>
+                <div class="my_info">
+                    <div class="info_item">
+                        <i class="uil uil-instagram info_icon"></i>
+                            <div>
+                                <h3 class="info_title">Instagram</h3>
+                                <span class="info_subtitle">Giri_sh0408</span>
+                            </div>
+                    </div>
+
+                    <div class="info_item">
+                            <i class="uil uil-whatsapp info_icon"></i>
+
+                            <div>
+                                <h3 class="info_title">Whatsapp</h3>
+                                <span class="info_subtitle">9588703587</span>
+                            </div>
+                    </div>
+
+                    <div class="info_item">
+                            <i class="uil uil-envelope-edit info_icon"></i>
+                            <div>
+                                <h3 class="info_title">Email</h3>
+                                <span class="info_subtitle">Girish.research.pr@gmail.com</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section_title">ABOUT ME</h2>
+            <div class="about_container container grid">
+                <img src="assets/img/giri.jpg" alt="" class="about_img">
+                
+                <div class="about_data">
+                    <h3 class="about_heading">Hi, I'm Girish, Live in India</h3>
+                    <p class="about_discription">Research in field of Speach, NLP and vision</p>
+                    <div class="about_info">
+                        <div class="about_box">
+                            <i class="uil uil-award about_icon"></i>
+                            <h3 class="about_title">Experience</h3>
+                            <span class="about_subtitle">working for 6 months on Research projects under IIIT Professor </span>
+                        </div>
+
+                        <div class="about_box">
+                            <i class="uil uil-suitcase-alt about_icon"></i>
+                            <h3 class="about_title">Completed</h3>
+                            <span class="about_subtitle">7 projects of Deeplearning and few research Papers in under process</span>
+                        </div>
+
+                        <div class="about_box">
+                            <i class="uil uil-headphones-alt about_icon"></i>
+                            <h3 class="about_title">End to End Project</h3>
+                            <span class="about_subtitle">I have deploy models online for relevent task</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button"><i class="uil uil-navigator button_icon"></i>
+                        Contact Me</a>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="qualification section">
+            <h2 data-heading="My Journey" class="section_title">Qualification</h2>
+            <div class="qualification_container container grid">
+                <!--  -->
+                <div class="education">
+                    <h3 class="qualification_title">
+                        <i class="uil uil-graduation-cap"></i>Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">UPES University Dehradun</h3>
+                            <p class="timeline_text">School of Computer Science</p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022 - 2026
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Will Study in Abroad</h3>
+                            <p class="timeline_text">Plans of Master's</p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>
+                                2027
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">PhD</h3>
+                            <p class="timeline_text">Can go in line of research</p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>Future
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="experience">
+                    <h3 class="qualification_title">
+                        <i class="uil uil-suitcase"></i>
+                        Experience
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Working under IIIT Professor</h3>
+                            <p class="timeline_text">Have done work on LLMs</p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>
+                                20224 - Present
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">NLP</h3>
+                            <p class="timeline_text">Have good comand in NLPs
+                            </p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>
+                                20224 - Present
+                            </span>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="circle_dot"></div>
+                            <h3 class="timeline_title">Deeplearnong</h3>
+                            <p class="timeline_text">Doing work in core Deeplearning have good experience in image and audio processing</p>
+                            <span class="timeline_data">
+                                <i class="uil uil-calendar-alt"></i>
+                                20224 - Present
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <!-- SKILLS -->
+
+        <section class="skills section" id="skills">
+            <h2 data-heading='My abilitites' class="section_title">My Experience</h2>
+            
+            <div class="skill_container container grid">
+                <div class="skills_tabs">
+                    <div class="skills_header skills_active" data-target="#frontend" >
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">researche in speech</h1>
+                            <span class="skills_subtitle">more than 6 months</span>
+
+                            
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_header" data-target="#design">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">reseache in NLP</h1>
+                            <span class="skills_subtitle">more than 4 months</span>
+
+                            
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                    <div class="skills_header" data-target="#backend">
+                        <i class="uil uil-brackets-curly skills_icon"></i>
+                        <div>
+                            <h1 class="skills_title">worked on images and video</h1>
+                            <span class="skills_subtitle">spend few months to create a edn to end project</span>
+
+                            
+                        </div>
+                        <i class="uil uil-angle-down skills_arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <div class="skills_group skills_active" data-content id="frontend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">AUDIO PROCESSING</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 75%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">AUDIO CLassification</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">ALM(audio large language model)</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="skills_group skills_active" data-content id="design">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Text classifiacction</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Text encoder and decoder</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">LLMs</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="skills_group skills_active" data-content id="backend">
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Image Classification task</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 80%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Contrastive Learning on Video</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 60%"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Multimodaality on Video</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+    
+                                <div class="skills_bar">
+                                    <span class="skills_percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                 
+            </div>
+        </section>
+
+
+        <!-- WORK -->
+
+        <section class="work section" id="work">
+            <h2 data-heading="My Portfolio" class="section_title">Recent Works</h2>
+            <div class="work_filters">
+                <span class="work_item active-work" data-filter="all">ALL</span>
+                <span class="work_item" data-filter=".Web">NLP</span>
+                <span class="work_item" data-filter=".app">Image</span>
+                <span class="work_item" data-filter=".design">Audio</span>
+            </div>
+            <div class="work_container container grid">
+                <div class="work_card mix Web">
+                    <img src="assets/img/work1.jpg" alt="" class="work_img" width="400" height="350">
+
+                    <h3 class="work_title"></h3>
+                    <span class="work_button">
+                        Preview
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title"></h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corporis pariatur. Enim nihil cum, veritatis repellendus excepturi iste sint, temporibus veniam sunt placeat, quis animi eligendi! At labore aliquam dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>4work1 dec 2323 </span></li>
+                            <li>tecnologies - <span>html css</span></li>
+                            <li>role - <span>frontend</span></li>
+                            <li>view - <span><a href="#">localhost</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work_card mix app">
+                    <img src="assets/img/dalle.jpg" alt="" class="work_img" width="400" height="350">
+
+                    <h3 class="work_title"></h3>
+                    <span class="work_button">
+                        Preview
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title"></h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corporis pariatur. Enim nihil cum, veritatis repellendus excepturi iste sint, temporibus veniam sunt placeat, quis animi eligendi! At labore aliquam dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>5 dec 2323 </span></li>
+                            <li>tecnologies - <span>html css</span></li>
+                            <li>role - <span>frontend</span></li>
+                            <li>view - <span><a href="#">localhost</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work_card mix app">
+                    <img src="assets/img/1.jpg" alt="" class="work_img" width="400" height="350">
+
+                    <h3 class="work_title"></h3>
+                    <span class="work_button">
+                        Preview
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title"></h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corporis pariatur. Enim nihil cum, veritatis repellendus excepturi iste sint, temporibus veniam sunt placeat, quis animi eligendi! At labore aliquam dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>5 dec 2323 </span></li>
+                            <li>tecnologies - <span>html css</span></li>
+                            <li>role - <span>frontend</span></li>
+                            <li>view - <span><a href="#">localhost</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work_card mix design">
+                    <img src="assets/img/Audio.webp" alt="" class="work_img" width="400" height="350">
+
+                    <h3 class="work_title"></h3>
+                    <span class="work_button">
+                        Preview
+                        <i class="uil uil-arrow-right work_button-icon"></i>
+                    </span>
+                    <div class="portfolio_item-details">
+                        <h3 class="details_title"></h3>
+                        <p class="details_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, corporis pariatur. Enim nihil cum, veritatis repellendus excepturi iste sint, temporibus veniam sunt placeat, quis animi eligendi! At labore aliquam dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>4 dec 2323 </span></li>
+                            <li>tecnologies - <span>html css</span></li>
+                            <li>role - <span>frontend</span></li>
+                            <li>view - <span><a href="#">localhost</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pop up -->
+<!-- try but quite confusing -->
+        <div class="portfolio_popup">
+            <div class="portfolio_popup-inner">
+                <div class="portfolio_popup-content grid">
+                    <span class="portfolio_popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp_thumbnail">
+                        <img src="assets/img/work1.jpg" alt="" class="portfolio_popup-img" width="400" height="350">
+                    </div>
+                    <div class="portfolio_popup-info">
+                        <div class="portfolio_popup-subtitle">Features - <span>Design</span></div>
+                        <div class="portfolio_popup-body">
+                            <h3 class="details_title"></h3>
+                        <p class="details_description">Lorem ipsum animi eligendi! At labore aliquam dolore!</p>
+                        <ul class="details_info">
+                            <li>Created - <span>sfsjfljdec 2323 </span></li>
+                            <li>tecnologies - <span>html css</span></li>
+                            <li>role - <span>frontend</span></li>
+                            <li>view - <span><a href="#">localhost</a></span></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- contact -->
+
+        <section class="contact section" id="contact">
+            <h2 data-deading="Get in Touch " class="section_title">Contact me</h2>
+            <div class="contact_container container grid">
+                <div class="conteact_content">
+                    <div class="contact_info">
+                        <div class="contact_card">
+                            <i class="uil uil-envelope-edit contact_card-icon"></i>
+                            <h3 class="contact_card-title">Email</h3>
+                            <span class="contact_button">Girish.research.pr@gmil.com</span>
+                            <span class="contact_button">
+                                contact me<i class="uil uil-arrow-right services_button-icon"></i>
+                            </span>                        
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="uil uil-envelope-edit contact_card-icon"></i>
+                            <h3 class="contact_card-title">Whatsapp</h3>
+                            <span class="contact_button">9588703587</span>
+                            <span class="contact_button">
+                                contact me<i class="uil uil-arrow-right services_button-icon"></i>
+                            </span>                        
+                        </div>
+
+                        <div class="contact_card">
+                            <i class="uil uil-facebook-messenger contact_card-icon"></i>
+                            <h3 class="contact_card-title">messenger</h3>
+                            <span class="contact_button">girishgirish</span>
+                            <span class="contact_button">
+                                contact me<i class="uil uil-arrow-right services_button-icon"></i>
+                            </span>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_content">
+                    <form action="" class="contact_form">
+                        <div class="input_container">
+                            <input type="text" class="input">
+                            <label for="">Name</label>
+                            <span>Name</span>
+                        </div>
+
+                        <div class="input_container">
+                            <input type="text" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input_container">
+                            <input type="text" class="input">
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="input_container textarea">
+                            <textarea name="" id="" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button class="button"><i class="uil uil-navigator button_icon"></i>
+                            Drop message here
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('PopupController', function ($scope) {
+        $scope.userName = ''; // Initialize userName variable
+
+        $scope.closeWelcomePopup = function () {
+            document.getElementById('welcomePopup').style.display = 'none';
+        };
+    });
+</script>
+
+
+
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
